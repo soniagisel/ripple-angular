@@ -1,0 +1,17 @@
+/* Empty. Add your own CSS if you like */
+.landing-container {
+	padding: 2em;
+	text-align: center;
+}
+
+.land-icon {
+	background: url('../img/notes-icon.png') no-repeat center / cover ;
+	width: 13em;
+    height: 13em;
+    margin: auto;
+}
+
+.land-title, .land-sub-title {
+	color: #387ef5;
+	text-transform: uppercase;
+}

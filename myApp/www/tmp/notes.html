@@ -1,0 +1,19 @@
+<div class="app-container" ng-controller="notesCtrl">
+	<div class="button-bar">
+		<a href="#todos" class="button">To Do</a>
+		<a href="#notes" class="button">Notes</a>
+	</div>
+	<ul class="add-note list list-inset">
+		<li class="item item-input">
+		    <i class="icon ion-compose placeholder-icon"></i>
+		    <textarea type="text" class="txt" ng-model="newNote" ng-keyup="add($event)" ></textarea>
+		</li>
+	</ul>
+
+	<ul class="card">
+		<li class="item item-text-wrap" ng-repeat="note in notes track by $index">
+		  	<span>{{ note }}</span>
+		  	<button class="done-btn button button-outline button-positive" ng-click="erase(note)">Erase</button>
+		</li>
+	</ul>
+</div>

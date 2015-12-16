@@ -1,0 +1,19 @@
+<div class="app-container" ng-controller="toDoCtrl">
+  <div class="button-bar">
+    <a href="#todos" class="button">To Do</a>
+    <a href="#notes" class="button">Notes</a>
+  </div>
+  <ul class="add-todo list list-inset">
+    <li class="item item-input">
+        <i class="icon ion-compose placeholder-icon"></i>
+        <input type="text" class="txt" ng-model="newTodo" ng-keyup="add($event)" >
+    </li>
+  </ul>
+
+  <ul class="list list-inset">
+    <li class="item" ng-repeat="todo in todos track by $index">
+      <span>{{ todo }}</span>
+      <button class="done-btn button button-outline button-positive" ng-click="done(todo)">Done</button>
+    </li>
+  </ul>
+</div>
