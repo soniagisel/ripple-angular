@@ -4,38 +4,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title></title>
-
-
-    <!-- compiled css output -->
-    <link href="css/ionic.app.css" rel="stylesheet">
+    <!-- css  -->
     <link href="css/style.css" rel="stylesheet">
 
-    <!-- coordova -->
-    <script src="node_modules/coordova/cordova.js" type="text/javascript"></script>
-
-    <!-- ionic/angularjs js -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js" type="text/javascript"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
-
-    <!-- your app's js -->
-    <script src="js/app.js"></script>
-
-    <script src="js/controllers.js"></script>
   </head>
   <body ng-app="toDo">
-
     <div>
       <button class="button button-icon icon ion-navicon"></button>
-      <h1 class="title">MY LIST</h1>
-
+      <h1 class="title">MY APP</h1>
       <!-- your content here 
         Following tutorial from http://medialoot.com/blog/angularjs-for-absolute-beginners/
       -->   
-
       <!-- angular templating -->
       <!-- this is where content will be injected -->
       <div ng-view=""></div>
-
     </div>
+    <!-- coordova -->
+    <script src="../node_modules/coordova/cordova.js" type="text/javascript"></script>
+    <!-- angularjs js -->
+    <script src="../node_modules/angular/angular.min.js" type="text/javascript"></script>
+    <script src="../node_modules/angular-route/angular-route.min.js"></script>
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
   </body>
 </html>

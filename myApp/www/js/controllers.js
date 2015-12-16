@@ -1,4 +1,4 @@
-app.controller('toDoCtrl', function($scope) {
+myApp.controller('toDoCtrl', function($scope) {
     $scope.todos = [];
     $scope.done = function(todo) {
     	var indexOf = $scope.todos.indexOf(todo);
@@ -15,7 +15,7 @@ app.controller('toDoCtrl', function($scope) {
 });
 
 
-app.controller('notesCtrl', function($scope) {
+myApp.controller('notesCtrl', function($scope) {
 	$scope.notes = [];
 	$scope.erase = function(note) {
 		var indexOf = $scope.notes.indexOf(note);
@@ -33,7 +33,7 @@ app.controller('notesCtrl', function($scope) {
 });
 
 
-app.config(function($routeProvider) {
+myApp.config(function($routeProvider) {
 	$routeProvider
 	.when('/', {
 		templateUrl : 'tmp/landing.html',
